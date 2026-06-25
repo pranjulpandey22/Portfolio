@@ -1,0 +1,20 @@
+.card {
+  display: flex;
+  flex-direction: row;     /* desktop: side by side */
+  gap: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  justify-content: space-around;
+  width: 40%;
+  margin: 120px;
+}
+@media (max-width: 600px) {
+  .card {
+    flex-direction: column; /* mobile: stacked */
+  }
+
+  .card img {
+    width: 100%;            /* full width on mobile */
+  }
+}
