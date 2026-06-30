@@ -1,56 +1,55 @@
-/* Todo.css */
-/* 
+/* ===========================
+   Global Styles
+=========================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f5f7fb;
-} */
-
-h1 {
-  text-align: center;
-  margin: 40px 0 25px;
-  color: #333;
-}
 
 .center {
   width: 450px;
   margin: auto;
   background: #fff;
   padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* Input Section */
+/* ===========================
+   Input Section
+=========================== */
 
 .center input[type="text"] {
-  /* width: 75%; */
-  padding: 10px 12px;
+  width: 72%;
+  padding: 11px 14px;
   font-size: 16px;
-  border: 1px solid #d1d5db;
+  border: 1px solid #d4d4d4;
   border-radius: 6px;
   outline: none;
+  transition: 0.3s;
 }
 
 .center input[type="text"]:focus {
   border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.25);
 }
 
-/* Add Button */
+/* ===========================
+   Add Button
+=========================== */
 
 .buttonADD {
-  width: 22%;
+  width: 24%;
   margin-left: 10px;
-  padding: 10px;
+  padding: 11px;
   border: none;
   border-radius: 6px;
   background: #2563eb;
   color: white;
+  font-size: 15px;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -59,13 +58,14 @@ h1 {
   background: #1d4ed8;
 }
 
-/* Todo List */
+/* ===========================
+   Todo List
+=========================== */
 
-ul{
+.hello {
   list-style: none;
-  margin: 20px;
-  width: 69%;
-
+  padding: 0;
+  margin-top: 25px;
 }
 
 .hello li {
@@ -74,27 +74,32 @@ ul{
   gap: 12px;
   background: #f8fafc;
   padding: 12px 15px;
-  margin-bottom: 12px;
   border-radius: 8px;
-  transition: 0.2s ease;
+  margin-bottom: 12px;
+  transition: 0.25s;
 }
 
 .hello li:hover {
   background: #eef2ff;
 }
 
-/* Checkbox */
+/* ===========================
+   Checkbox
+=========================== */
 
-.hello li input[type="checkbox"] {
+.hello input[type="checkbox"] {
   width: 18px;
   height: 18px;
   cursor: pointer;
 }
 
+/* ===========================
+   Todo Text
+=========================== */
 
-.hello li span {
+.hello span {
   flex: 1;
-  font-size: 17px;
+  font-size: 16px;
   color: #333;
   word-break: break-word;
 }
@@ -104,10 +109,12 @@ ul{
   color: #888;
 }
 
-/* Delete Button */
+/* ===========================
+   Delete Button
+=========================== */
 
-.hello li button {
-  padding: 7px 14px;
+.hello button {
+  padding: 8px 14px;
   border: none;
   border-radius: 6px;
   background: #ef4444;
@@ -116,11 +123,14 @@ ul{
   transition: 0.3s;
 }
 
-.hello li button:hover {
+.hello button:hover {
   background: #dc2626;
 }
 
-/* Responsive */
+
+/* ===========================
+   Responsive
+=========================== */
 
 @media (max-width: 500px) {
   .center {
@@ -129,22 +139,24 @@ ul{
   }
 
   .center input[type="text"] {
-    width: 68%;
+    width: 65%;
   }
 
   .buttonADD {
-    width: 28%;
+    width: 30%;
+    margin-left: 5px;
   }
 
-  li {
-    gap: 8px;
+  .hello li {
+    gap: 10px;
+    padding: 10px;
   }
 
-  li span {
+  .hello span {
     font-size: 15px;
   }
 
-  li button {
+  .hello button {
     padding: 6px 10px;
     font-size: 14px;
   }
