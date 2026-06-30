@@ -40,12 +40,13 @@ const Todo = () => {
   };
 
   return (
-    <>
-      <h1>Create TO Do List</h1>
+    <div>
+     <h1>Create TO Do List</h1>
       <div className="center">
         <input
           type="text"
           value={input}
+          placeholder="Enter To Do Items......"
           onChange={(e) => setInput(e.target.value)}
         />
         <button className="buttonADD" onClick={handleClick}>
@@ -71,7 +72,7 @@ const Todo = () => {
           })}
         </ul>
       </div>
-    </>
+    </div>
   );
 };
 export default Todo;
