@@ -5,6 +5,7 @@ const Todo = () => {
   const [input, setInput] = useState("");
   const [todo, setTodo] = useState([]);
   const handleClick = () => {
+    
     const items = {
       id: Date.now(),
       name: input.trim(),
