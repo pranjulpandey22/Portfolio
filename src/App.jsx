@@ -8,10 +8,10 @@ const App =()=>{
     <>
       <Navbar />
       <h1>Frontend Queries</h1>
-      <Todo />
+      {/* <Todo /> */}
       {/* <Hero /> */}
       {/* <ProgressBar /> */}
-      {/* <User /> */}
+      <User />
     </>
   )
 }
