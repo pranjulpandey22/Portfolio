@@ -1,0 +1,30 @@
+.mains {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px auto;
+  width: auto;
+}
+.cardProduct {
+  display: flex;
+  padding: 10px;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: 2px solid black;
+  width: 300px;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.3 ease-in-out;
+}
+.cardProduct:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 119, 255, 0.25);
+}
+
+.imgPrro {
+  width: 200px;
+}
+
