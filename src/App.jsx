@@ -1,14 +1,16 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import ProgressBar from "./components/Projects/ProgressBar/ProgressBar";
-import User from "./components/Projects/UsersData/User";
-import Todo from "./components/Projects/Todo/Todo";
-import Pagination from "./components/Projects/Pagination/Pagination";
+import ProgressBar from "./components/MachineCoding/ProgressBar/ProgressBar";
+import User from "./components/MachineCoding/UsersData/User";
+import Todo from "./components/MachineCoding/Todo/Todo";
+import Pagination from "./components/MachineCoding/Pagination/Pagination";
+import AutoComplete from "./components/MachineCoding/AutoCompleteSearchBar/AutoComplete";
 const App =()=>{
   return (
     <>
       <Navbar />
-      <Pagination/>
+      <AutoComplete />
+      {/* <Pagination/> */}
       {/* <h1>Frontend Queries</h1> */}
       {/* <Todo /> */}
       {/* <Hero /> */}
